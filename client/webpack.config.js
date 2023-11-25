@@ -18,12 +18,52 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      // Add the webpack plugin to generate HTML file and inject bundles
+      new HtmlWebpackPlugin({
+        template: "./index.html",
+        title: "Text Editor"
+      }),
+
+      // Custom service worker injected
+      new InjectManifest({
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js"
+      }),
+
+      // manifest.json file created
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: "Text Editor",
+        short_name: "TE",
+        description: "Text Editor that can be used on or offline",
+        background_color: "",
+        theme_color: "",
+        start_url: "./",
+        publicPath: "./",
+        icons: [
+          {
+            src: path.resolve("src/images/logo.png"),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join("assets", "icons"),
+          }
+        ]
+      })
       
     ],
 
     module: {
       rules: [
-        
+        // include CSS loaders for webpack
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+        // babel added to webpack to use ES6
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+        }
       ],
     },
   };

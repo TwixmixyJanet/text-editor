@@ -1,11 +1,11 @@
 {
-  "name": "JATE",
+  "name": "text-editor",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
     "start": "webpack --watchAll"
   },
-  "author": "2U",
+  "author": "Janet Webster",
   "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.15.0",

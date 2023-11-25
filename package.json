@@ -12,7 +12,7 @@
     "client": ""
   },
   "keywords": [],
-  "author": "",
+  "author": "Janet Webster",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
