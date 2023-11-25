@@ -1,17 +1,17 @@
 # (づ ◕‿◕ )づ TEXT EDITOR ٩(◕‿◕)۶
 
-### [View Video Project Here](https://drive.google.com/file/d/17xN02lGkRAIHOotqJwAM4zFbD0m237cd/view?usp=sharing "SOCIAL NETWORK API")<br />
-![image of SOCIAL NETWORK API](/public/img/projectimage.png "image of SOCIAL NETWORK API")
+### [View Live Project Here](https://drive.google.com/file/d/17xN02lGkRAIHOotqJwAM4zFbD0m237cd/view?usp=sharing "TEXT EDITOR")<br />
+![image of TEXT EDITOR](/public/img/projectimage.png "image of TEXT EDITOR")
 | Technology Used    | Resource URL |
 | --------  | ------- |
-| NodeJS      | https://nodejs.org/en |
-| ExpressJS      | https://expressjs.com/ |
+| NodeJS | https://nodejs.org/en |
+| ExpressJS | https://expressjs.com/ |
+| path | https://www.npmjs.com/package/path |
+| concurrently | https://www.npmjs.com/package/concurrently |
+| IndexedDB | https://www.npmjs.com/package/idb |
 | Nodemon  | https://www.npmjs.com/package/nodemon |
-| Insomnia | https://insomnia.rest/ |
-| MongoDB | https://www.mongodb.com/ |
-| Mongoose | https://mongoosejs.com/docs/ |
-| MongoDB Compass | https://www.mongodb.com/products/tools/compass |
-| Screencastify | https://www.screencastify.com/ |
+| Webpack | https://www.npmjs.com/package/webpack |
+| @babel | https://www.npmjs.com/package/@babel/core |
 | JavaScript | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
 | Git       | https://git-scm.com/ |
 | GitHub     | https://github.com/ |
@@ -26,7 +26,7 @@
 * [About](#about)
 
 ## Description:
-This project is a back end social media api. Using technology like MongoDB, Mongoose, and MongoDB Compass we are able to fully set up and test a backend for a social media platform.<br />
+This project is a on and off-line text editor application. Using Progressive Web Applications to build a text editor that runs in the browser.<br />
 <br />
 
 ### How to use this app:
