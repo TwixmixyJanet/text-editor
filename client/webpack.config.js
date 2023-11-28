@@ -9,10 +9,12 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 module.exports = () => {
   return {
     mode: 'development',
+    // entry point for application files
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+    // output point for application files
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
@@ -21,7 +23,7 @@ module.exports = () => {
       // Add the webpack plugin to generate HTML file and inject bundles
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "Text Editor"
+        title: "Janet's Awesome Text Editor"
       }),
 
       // Custom service worker injected
@@ -34,11 +36,11 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: "Text Editor",
-        short_name: "TE",
-        description: "Text Editor that can be used on or offline",
-        background_color: "",
-        theme_color: "",
+        name: "Janet's Awesome Text Editor",
+        short_name: "J.A.T.E.",
+        description: "Janet's Awesome Text Editor that can be used on or offline",
+        background_color: "#272822",
+        theme_color: "#31a9e1",
         start_url: "./",
         publicPath: "./",
         icons: [

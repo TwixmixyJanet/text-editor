@@ -1,3 +1,4 @@
+// offlineFallback was here in starter code, but not used
 const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
 // add StaleWhileRevalidate to be used for caching
 const { CacheFirst, StaleWhileRevalidate } = require('workbox-strategies');
