@@ -1,7 +1,7 @@
 {
-    "name": "text-editor",
+    "name": "janets-awesome-text-editor",
     "version": "1.0.0",
-    "description": "",
+    "description": "Janet's Awesome Text Editor that can be used on or offline",
     "main": "server.js",
     "scripts": {
         "server": "nodemon server.js --ignore client"
