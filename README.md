@@ -1,4 +1,5 @@
-# (づ ◕‿◕ )づ TEXT EDITOR ٩(◕‿◕)۶
+# (づ ◕‿◕ )づ JANET'S AWESOME TEXT EDITOR ٩(◕‿◕)۶
+_AKA, JATE_
 
 ### [View Live Project Here](https://drive.google.com/file/d/17xN02lGkRAIHOotqJwAM4zFbD0m237cd/view?usp=sharing "TEXT EDITOR")<br />
 ![image of TEXT EDITOR](/public/img/projectimage.png "image of TEXT EDITOR")
