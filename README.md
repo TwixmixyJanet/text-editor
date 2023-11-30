@@ -1,8 +1,8 @@
 # (づ ◕‿◕ )づ JANET'S AWESOME TEXT EDITOR ٩(◕‿◕)۶
 _AKA, JATE_
 
-### [View Live Project Here](https://drive.google.com/file/d/17xN02lGkRAIHOotqJwAM4zFbD0m237cd/view?usp=sharing "TEXT EDITOR")<br />
-![image of TEXT EDITOR](/public/img/projectimage.png "image of TEXT EDITOR")
+### [View Live Project Here](https://boiling-peak-88999-0c04f9202acc.herokuapp.com/ "JANET'S AWESOME TEXT EDITOR")<br />
+![image of JANET'S AWESOME TEXT EDITOR](/public/img/projectimage.png "image of JANET'S AWESOME TEXT EDITOR")
 | Technology Used    | Resource URL |
 | --------  | ------- |
 | NodeJS | https://nodejs.org/en |
@@ -34,65 +34,74 @@ This project is a on and off-line text editor application. Using Progressive Web
 
 * Be sure to have the technologies above
 * Download this repository to your local device
-* Run `npm i && npm run seed`
+* Run `npm i && npm run build`
 * Run `npm start`
-* Watch the video above on how to run routes in Insomnia
-* View, add, update, and remove data as needed
+* Visit localhost:3000 or the Heroku deployment above
+* Type into the editor and see updates save to your localstorage
 
   ## User Story
 
 ```md
-AS A social media startup
-I WANT an API for my social network that uses a NoSQL database
-SO THAT my website can handle large amounts of unstructured data
+AS A developer
+I WANT to create notes or code snippets with or without an internet connection
+SO THAT I can reliably retrieve them for later use
 ```
 
 ## Acceptance Criteria
 
 ```md
-GIVEN a social network API
-WHEN I enter the command to invoke the application
-THEN my server is started and the Mongoose models are synced to the MongoDB database
-WHEN I open API GET routes in Insomnia for users and thoughts
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete users and thoughts in my database
-WHEN I test API POST and DELETE routes in Insomnia
-THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
+GIVEN a text editor web application
+WHEN I open my application in my editor
+THEN I should see a client server folder structure
+WHEN I run `npm run start` from the root directory
+THEN I find that my application should start up the backend and serve the client
+WHEN I run the text editor application from my terminal
+THEN I find that my JavaScript files have been bundled using webpack
+WHEN I run my webpack plugins
+THEN I find that I have a generated HTML file, service worker, and a manifest file
+WHEN I use next-gen JavaScript in my application
+THEN I find that the text editor still functions in the browser without errors
+WHEN I open the text editor
+THEN I find that IndexedDB has immediately created a database storage
+WHEN I enter content and subsequently click off of the DOM window
+THEN I find that the content in the text editor has been saved with IndexedDB
+WHEN I reopen the text editor after closing it
+THEN I find that the content in the text editor has been retrieved from our IndexedDB
+WHEN I click on the Install button
+THEN I download my web application as an icon on my desktop
+WHEN I load my web application
+THEN I should have a registered service worker using workbox
+WHEN I register a service worker
+THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
+WHEN I deploy to Render
+THEN I should have proper build scripts for a webpack application
 ```
 
-### MongoDB/Mongoose Lessons Learned 
+### Lessons Learned 
 
-#### 1. Controllers versus Routes
-I probably should have picked up on this difference before this project, but here we really iron out the separation. Routes and controllers play distinct roles in handling incoming requests and generating appropriate responses. Routes define the pathways for incoming requests, while controllers manage the the application's logic and interctions with the database, ultimately generating the appropriate response to user interactions. I want to delve further into this in the other lessons.
+#### 1. concurrently scripts
+In this challenge we were tasks to have multiple scripts run from our package.json. To accomplish this we used the concurrently NPM.
 <br />
 ![lesson 1](public/img/lesson1.png)
 
-#### 2. Controllers
-Controllers handle the application's business logic, processing requests from the routes and generating responses. They interact with the database to retrieve or manipulate data, perform calculations, and prepare the necessary information to be sent back to the user. Controllers orchestrate the application's logic, ensuring that requests are handled efficiently and according to the application's requirements. Here are a couple examples of the controllers used for this project.
+#### 2. Webpack
+The webpack is the backbone of the PWA. It is a module bundler that plays a crucial role in streamlining the development and deployment of the web applications. It's a versatile toll that helps manage and optimize the various components of a PWA, including JavaScript modules, CSS files, and images.
 <br />
 ![lesson 2](public/img/lesson2.png)
 ![lesson 2](public/img/lesson2b.png)
-![lesson 2](public/img/lesson2c.png)
 
-#### 3. Routes
-Routes act as a map for directing incoming requests to specific controller functions. They define the endpoints or URLs that a web application can respond to. When a user interacts with the application by accessing a particular URL, the corresponding route matches the URL pattern and directs the request to the appropriate controller action. Here is an example of the routes using the controllers.
+#### 3. Service Workers
+SWs are scripts that run in the background, separate from the main web page. They act as an intermediary between the web app and the network, providing several benefits for PWAs.
 <br />
 ![lesson 3](public/img/lesson3.png)
 
-#### 4. Helpers => dateFormat && seed
-For this project I used helpers to set the date/time format and to seed the database. For the dateFormat the ultimate goal was to create a readable timestamp for Thoughts and Reactions in the database. Here is a sample of the code used to implement it.
+#### 4. Local Install
+Local installation of PWAs allows users to add these web apps to their devices just like native apps. This provides benefits like easy access to the application, offline accessibility, and push notifications.
 <br />
 ![lesson 4](public/img/lesson4.png)
-![lesson 4](public/img/lesson4b.png)
-<br />
-For the seed file, I wanted to have data already in the system so the entries did not have to be added manually to the database.
-<br />
-![lesson 4](public/img/lesson4c.png)
-![lesson 4](public/img/lesson4d.png)
 
 #### Synopsis
-Sometimes learning new technologies can be just as challenging as learning a concept enveloped in a particular tech. The hangups that I found really came down to not knowing how to write the syntax for the new tech and trying to rely on knowledge of other techs already learned. This required research to make sure syntax was typed specifically to working with MongoDB and Mongoose.
+For me, this was one of the most frustrating projects so far. I learned a lot and if I need to create PWAs going forward I have a solid foundation of knowledge now to do so.
 
 ## Installation
 
@@ -106,7 +115,7 @@ Sometimes learning new technologies can be just as challenging as learning a con
 
 ## Usage
 
-This is a back end social media api project. If you would like to update and use app follow the installation steps and curate it to your needs. If you would like to use this app, follow the steps under the description 'How to' above and click the link at the top of this page.
+This is a on and off-line text editor application. If you would like to update and use app follow the installation steps and curate it to your needs. If you would like to use this app, follow the steps under the description 'How to' above and click the link at the top of this page.
 
 ## License
 
